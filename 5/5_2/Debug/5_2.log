@@ -1,0 +1,7 @@
+﻿  Source.cpp
+d:\itstep\ht\5\5_2\source.cpp(21): warning C4018: '<=' : signed/unsigned mismatch
+d:\itstep\ht\5\5_2\source.cpp(30): warning C4018: '<' : signed/unsigned mismatch
+d:\itstep\ht\5\5_2\source.cpp(33): warning C4018: '<' : signed/unsigned mismatch
+d:\itstep\ht\5\5_2\source.cpp(42): warning C4018: '<=' : signed/unsigned mismatch
+d:\itstep\ht\5\5_2\source.cpp(5): warning C4101: 'dot' : unreferenced local variable
+  5_2.vcxproj -> D:\ITSTEP\HT\5\5_2\Debug\5_2.exe
