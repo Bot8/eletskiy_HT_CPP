@@ -9,6 +9,31 @@ struct s_time
     unsigned seconds: 6;
 };
 
+/*
+    prints time value with leading zero
+ */
+void printTimePart(unsigned part);
+
+/*
+    prints time formated like HH:MM:SS
+ */
+void showTime(s_time timeVar);
+
+/*
+    sets time to the s_time struct
+    if variable 'current' true - sets current time
+ */
+s_time setTime(bool current, int timezone);
+
+int main(){
+    s_time timeVal;
+    timeVal = setTime();
+    showTime(timeVal);
+    timeVal = setTime(true, 3);
+    showTime(timeVal);
+    return 0;
+}
+
 void printTimePart(unsigned part){
     if(part<10) {
         cout << 0;
@@ -56,13 +81,4 @@ s_time setTime(bool current = false, int timezone = 0){
         timeVal.hours = a%24;
     }
     return timeVal;
-}
-
-int main(){
-    s_time timeVal;
-    timeVal = setTime();
-    showTime(timeVal);
-    timeVal = setTime(true, -19);
-    showTime(timeVal);
-    return 0;
 }
