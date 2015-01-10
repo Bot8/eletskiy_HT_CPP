@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string.h>
+#include <cstdlib>
 
 using namespace std;
 
@@ -236,7 +237,8 @@ bool addRow(int ***p_matrix, int * p_cols, int * p_rows, int addTo) {
     int ** newMatrix = new int *[l_rows];
 
     for (int i = 0, j = 0; i<l_rows; i++) {
-        if(addTo == i || (addTo==1 && i==0)) {
+
+        if(addTo == i ) {
             /*
                 new row in new position
             */

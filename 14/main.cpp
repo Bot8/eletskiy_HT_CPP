@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string.h>
+#include <cstdlib>
+#include <stdio.h>
 
 using namespace std;
 /*

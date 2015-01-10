@@ -23,11 +23,11 @@ void showTime(s_time timeVar);
     sets time to the s_time struct
     if variable 'current' true - sets current time
  */
-s_time setTime(bool current, int timezone);
+s_time setTime(bool current = false, int timezone = 0);
 
 int main(){
     s_time timeVal;
-    timeVal = setTime();
+    timeVal = setTime(false);
     showTime(timeVal);
     timeVal = setTime(true, 3);
     showTime(timeVal);
@@ -51,7 +51,7 @@ void showTime(s_time timeVar){
     cout << endl;
 }
 
-s_time setTime(bool current = false, int timezone = 0){
+s_time setTime(bool current, int timezone){
     s_time timeVal;
     int a;
     if(!current) {
